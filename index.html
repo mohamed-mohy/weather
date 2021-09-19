@@ -1,0 +1,221 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/index_style.css">
+        
+    </head>
+    <body class=" text-light">
+            <div class=" home bg-dark ">
+
+                <div class="container">
+
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <div class="container-fluid ">
+                        <a class="navbar-brand px-5" href="#">
+                        <img src="images/logo@2x.png" alt="" class="float-start mx-2">
+                            <div>
+                                Weather
+                                <br>
+                                <small>tagline goes here</small>
+                            </div>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end px-5" id="navbarNav">
+                            <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active rounded-pill px-4" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link rounded-pill px-4" href="#">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link rounded-pill px-4" href="#">Live Camera</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link rounded-pill px-4" href="#">Photo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link rounded-pill px-4" href="#">Contact</a>
+                            </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </nav>
+
+                </div>
+
+            </div>
+
+            <div class="container-fluid main bg-dark">
+
+                <div class="container">
+
+
+                    <div class="row search px-5 ">
+                        <div class=" position-relative">
+                            <input type="text" id="search" class="form-control rounded-pill py-3 my-5 bg-dark border-0 text-light " placeholder="Find Your Location">
+                            <button class="btn position-absolute rounded-pill py-2 px-5 btn-primary find">Find</button>
+                        </div>
+                    
+                        <div class="col-lg-8 col-sm-12 box-body1 mx-auto main-box ">
+                                
+                    
+    
+                            <div class=" rounded-start box-header1 p-2 text-white  d-flex justify-content-between">
+                                <h6 class="day"></h6>
+                                <h6 class="date"></h6>
+                            </div>
+
+                            <div class="box-body1 p-3 rounded-bottom">
+                                <h4 class="text-white-50"></h4>
+                                <div class="d-flex justify-content-around align-items-center">
+                                    <big><span class="dgree"></span>°C</big>
+                                    <img id="imgMood" class="img-fluid w-50 " src="images/icons/not-available.svg">
+                                </div>
+                                    <h4 class="text-info status "> </h4>
+                                <div class="d-flex justify-content-around text-center">
+
+                                    <div>
+                                        <img class="box-icon" src="images/icons/smoke.svg" > 
+                                        <span class="Cloud"></span>
+                                        <br>
+                                        <span>Cloud</span>
+                                    </div>
+                                    <div>
+                                        <img class="box-icon" src="images//icons/wind.svg" > 
+                                        <span class="Wind"></span>
+                                        <br>
+                                        <span>Wind</span>
+                                    </div>
+                                    <div>
+                                        <img class="box-icon" src="images//icons/windsock.svg" > 
+                                        <span class="Wind_Dir"></span>
+                                        <br>
+                                        <span>Wind Direction</span>
+                                    </div>
+                                    <div>
+                                        <img class="box-icon" src="images/icons/humidity.svg" > 
+                                        <span class="Humidity"></span>
+                                        <br>
+                                        <span>Humidity</span>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex mt-5 justify-content-around text-center">
+
+                                   
+                                    <div>
+                                        
+                                        <img class="box-icon" src="images//icons/sunrise.svg" > 
+                                        <span class="Sunrise"></span>
+                                        <br>
+                                        <span>Sunrise</span>
+                                    </div>
+                                    <div>
+                                        <img class="box-icon" src="images//icons/sunset.svg" > 
+                                        <span class="Sunset"></span>
+                                        <br>
+                                        <span>Sunset</span>
+                                    </div>
+
+                                    
+                                    <div>
+                                        <img class="box-icon" src="images//icons/moonrise.svg" > 
+                                        <span class="Moonrise"></span>
+                                        <br>
+                                        <span>Moonrise</span>
+                                    </div>
+                                    <div>
+                                        <img class="box-icon" src="images//icons/moonset.svg" > 
+                                        <span class="Moonset"></span>
+                                        <br>
+                                        <span>Moonset</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class="text-center text-info pt-2">Next 2 Days</h2>
+
+                        <div class="d-flex flex-lg-row justify-content-center flex-sm-column boxes py-5">
+    
+    
+                            
+    
+                            <div class="col-lg-4 col-sm-12 NxDay ">
+                            
+                                
+                                    <div class="box-header1 p-2  text-white  d-flex justify-content-between ">
+                                        <h6 class="day"></h6>
+                                        <h6 class="date"></h6>
+                                    </div>
+     
+                                    <div class="box-body1 p-3 rounded-bottom text-center border border-1 border-primary">
+                                        <img  class="w-50 imgMood" src="images/icons/not-available.svg">
+                                        <br>
+                                            <div class="d-flex align-contact-end justify-content-center">
+                                                <big class="max"><span class="degreemax"></span>°C /</big>
+                                                <big class="min"><span class="degreemin"></span>°C</big>
+                                            </div>
+                                            <p class="text-info status">  </p>
+                                        
+                                    </div>
+                                </div>
+    
+                                <div class="col-lg-4 col-sm-12  NxDay1">
+                            
+                                
+                                    <div class="box-header1 p-2 rounded-end text-white  d-flex justify-content-between">
+                                        <h6 class="day"></h6>
+                                        <h6 class="date"></h6>
+                                    </div>
+    
+                                    <div class="box-body1 p-3 rounded-bottom text-center  border border-1 border-primary ">
+                                        <img class="w-50 imgMood" src="images/icons/not-available.svg">
+                                        <br>
+                                        <div class="d-flex align-contact-end justify-content-center">
+                                            <big class="max"><span class="degreemax"></span>°C /</big>
+                                            <big class="min"><span class="degreemin"></span>°C</big>
+                                        </div>
+                                        <p class="text-info status"></p>
+                                    </div>
+                                </div>
+    
+    
+                        </div>
+
+
+                </div>
+                
+                </div>
+
+            </div>
+
+
+            <footer class="py-5 container-fluid ">
+                <div class="container px-5">
+                    <div class="row align-items-end justify-content-end">
+                        <div class=" col-lg-6 position-relative">
+                            <input type="text" class="form-control rounded-pill py-2 my-2 bg-dark border-0 text-light " placeholder="Enter Your Email To Subscribe">
+                            <button class="btn position-absolute rounded-pill py-2 px-3 btn-primary find1">Subscribe</button>
+                        </div>
+                        <div class="icons offset-1 col-lg-5 ">
+                        
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-google"></i>
+                        </div>
+
+                        <p class="text-white-50 pt-4 fw-light">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                    </div> 
+                </div>
+            </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/mine.js"></script>
+    </body>
+</html>
